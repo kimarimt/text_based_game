@@ -1,0 +1,99 @@
+[
+  {
+    "name": "Library",
+    "paths": {
+      "s": "d",
+      "d": "b"
+    },
+    "center_x": 2,
+    "center_y": 1,
+    "required_item": "Library Key",
+    "available_item": "Jade Key"
+  },
+  {
+    "name": "Music Room",
+    "paths": {
+      "s": "e",
+      "a": "a",
+      "d": "c"
+    },
+    "center_x": 11,
+    "center_y": 1,
+    "required_item": null,
+    "available_item": "Library Key"
+  },
+  {
+    "name": "Game Room",
+    "paths": {
+      "a": "b"
+    },
+    "center_x": 20,
+    "center_y": 1,
+    "required_item": "Game Room Key",
+    "available_item": "Obsidian Key"
+  },
+  {
+    "name": "Bedroom",
+    "paths": {
+      "w": "a"
+    },
+    "center_x": 2,
+    "center_y": 6,
+    "required_item": null,
+    "available_item": "Pistol"
+  },
+  {
+    "name": "Foyer",
+    "paths": {
+      "w": "b",
+      "s": "g",
+      "d": "f"
+    },
+    "center_x": 11,
+    "center_y": 6,
+    "required_item": null,
+    "available_item": null
+  },
+  {
+    "name": "Dining Room",
+    "paths": {
+      "s": "h",
+      "a": "e"
+    },
+    "center_x": 20,
+    "center_y": 6,
+    "required_item": null,
+    "available_item": "Game Room Key"
+  },
+  {
+    "name": "Entrance Hall",
+    "paths": {
+      "w": "e"
+    },
+    "center_x": 11,
+    "center_y": 11,
+    "required_item": null,
+    "available_item": null
+  },
+  {
+    "name": "Kitchen",
+    "paths": {
+      "w": "f",
+      "d": "i"
+    },
+    "center_x": 20,
+    "center_y": 11,
+    "required_item": null,
+    "available_item": "Lockpick"
+  },
+  {
+    "name": "Garage",
+    "paths": {
+      "a": "h"
+    },
+    "center_x": 29,
+    "center_y": 11,
+    "required_item": "Lockpick",
+    "available_item": "Quartz Key"
+  }
+]
