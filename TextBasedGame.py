@@ -18,6 +18,9 @@ def main():
         if not enemy_already_spawned(
                 game_board) and required_keys.count(True) > 1:
             spawn_enemy(game_board)
+        if can_defeat_enemy(inventory, current_room):
+            print("You used the pistol to shoot Dr. Blackwood\n")
+            current_room.clear_room()
 
         if did_player_win(inventory, current_room) or \
                 did_player_lose(inventory, current_room):
@@ -57,7 +60,8 @@ def main():
     if did_player_win(inventory, current_room):
         print('You collected all the keys and escaped from mansion. Good job Agent Kent!')
     elif did_player_lose(inventory, current_room):
-        print('The did\'nt grab the secret item and Dr Blackwood has captured you! GAME OVER!')
+        print(
+            'The didn\'t grab the secret item and Dr Blackwood has captured you! GAME OVER!')
 
 
 if __name__ == '__main__':

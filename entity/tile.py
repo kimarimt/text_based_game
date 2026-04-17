@@ -55,7 +55,9 @@ class Tile:
         :return: Whether the room has an item and if it's in the player's inventory.
         :rtype: bool
         """
-        return self.available_item is not None and self.available_item not in inventory
+        return self.available_item is not None \
+            and self.available_item not in inventory \
+            and self.available_item != 'Enemy'
 
     def clear_room(self):
         """

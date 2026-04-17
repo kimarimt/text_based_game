@@ -1,4 +1,4 @@
-from helpers.constants import CLEAR_COMMAND, ENEMY_SPAWN, PLAYER_TOKEN, REQUIRED_KEYS
+from helpers.constants import CLEAR_COMMAND, ENEMY_SPAWN_LOCATION, PLAYER_TOKEN, REQUIRED_KEYS
 from entity.tile import Tile
 from time import sleep
 import subprocess
@@ -84,6 +84,20 @@ def did_player_lose(inventory, current_room):
         and current_room.available_item == 'Enemy'
 
 
+def can_defeat_enemy(inventory, current_room):
+    """
+    Checks if the player has the required item to defeat the enemy.
+    :param inventory: The player's inventory.
+    :type inventory: list[str]
+    :param current_room: The current room.
+    :type current_room: Tile
+    :return: Whether the player can defeat the enemy or not
+    :rtype: bool
+    """
+    return 'Pistol' in inventory \
+        and current_room.available_item == 'Enemy'
+
+
 def enemy_already_spawned(game_board):
     """
     Checks if the enemy spawned at the specified location.
@@ -92,7 +106,7 @@ def enemy_already_spawned(game_board):
     :return: Whether is enemy spawned or not
     :rtype: bool
     """
-    return game_board[ENEMY_SPAWN].available_item == 'Enemy'
+    return game_board[ENEMY_SPAWN_LOCATION].available_item == 'Enemy'
 
 
 def spawn_enemy(game_board):
